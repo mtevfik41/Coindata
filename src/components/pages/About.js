@@ -38,8 +38,8 @@ const About = () => {
               </p>
             </Container>
           </Jumbotron>
-        </Container>
         <Footer/>
+        </Container>
       </Fragment>
   );
 };

@@ -101,9 +101,9 @@ const AllData = () => {
             : loading ? (<Container
                 className="d-flex align-items-center justify-content-center">
               <Spinner color="primary"/>
+        <Footer/>
             </Container>) : <Coins coins={data}/>
         }
-        <Footer/>
       </Fragment>
   );
 };
