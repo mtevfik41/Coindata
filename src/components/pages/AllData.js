@@ -45,27 +45,25 @@ const AllData = () => {
       setLoading(true);
       text.toLowerCase();
       dataURI = `https://api.coincap.io/v2/assets/${text}`;
-      axios.get(dataURI)
-          .then((response) => {
-            setFilteredData(response.data.data);
-            setText('');
-          })
-          .catch((error) => {
-                if (error.response) {
-                  setFilteredData(null);
-                  setText('Data Not Found');
-                  setDisabled(true);
-                  setTimeout(() => {
-                    setDisabled(false);
-                    setText('');
-                  }, 3000);
-                } else if (error.request) {
-                  console.log(error.request);
-                } else {
-                  console.log('Error', error.message);
-                }
-              },
-          );
+      axios.get(dataURI).then((response) => {
+        setFilteredData(response.data.data);
+        setText('');
+      }).catch((error) => {
+            if (error.response) {
+              setFilteredData(null);
+              setText('Data Not Found');
+              setDisabled(true);
+              setTimeout(() => {
+                setDisabled(false);
+                setText('');
+              }, 3000);
+            } else if (error.request) {
+              console.log(error.request);
+            } else {
+              console.log('Error', error.message);
+            }
+          },
+      );
       setLoading(false);
     }
     setLoading(false);
@@ -95,16 +93,15 @@ const AllData = () => {
             </InputGroup>
           </form>
         </div>
-        {
-          filteredData !== null ?
-              <div>
-                {loading ? <Spinner color="primary"/> : <FilteredCoin
-                    coin={filteredData}/>}
-              </div>
-              : loading ? (<Container
-                  className="d-flex align-items-center justify-content-center">
-                <Spinner color="primary"/>
-              </Container>) : <Coins coins={data}/>
+        {filteredData !== null ?
+            <div>
+              {loading ? <Spinner color="primary"/> : <FilteredCoin
+                  coin={filteredData}/>}
+            </div>
+            : loading ? (<Container
+                className="d-flex align-items-center justify-content-center">
+              <Spinner color="primary"/>
+            </Container>) : <Coins coins={data}/>
         }
         <Footer/>
       </Fragment>

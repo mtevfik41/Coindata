@@ -1,6 +1,7 @@
 // NAVBAR READY TO USE
 
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {
   Container,
   Nav,
@@ -17,27 +18,38 @@ const NavbarStrap = (props) => {
         <Navbar color="primary" light expand="md">
           <Container>
             <div className="d-flex align-items-center">
-              <NavbarBrand className="text-white" style={{fontSize: '24px'}}
-                           href="/Coindata">CoinData</NavbarBrand>
-
-              <NavLink className="text-white"
-                       href="/Coindata/alldata">Alldata</NavLink>
-
+              <NavbarBrand style={{fontSize: '24px'}}>
+                <Link className="text-white text-decoration-none"
+                      href="/Coindata">
+                  <span className="hov">Coindata</span>
+                </Link>
+              </NavbarBrand>
+              <NavLink>
+                <Link className="text-white text-decoration-none"
+                      to="/Coindata/alldata">
+                  <span className="hov">All data</span>
+                </Link>
+              </NavLink>
             </div>
             <div>
-
               <Nav className="d-flex flex-row" navbar>
                 <NavItem>
-                  <NavLink className="text-white"
-                           href="/Coindata">Home</NavLink>
+                  <NavLink>
+                    <Link className="text-white text-decoration-none"
+                          to="/Coindata">
+                      <span className="hov">Home</span>
+                    </Link>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-white"
-                           href="/Coindata/about">About</NavLink>
+                  <NavLink>
+                    <Link className="text-white text-decoration-none"
+                          to="/Coindata/about">
+                      <span className="hov">About</span>
+                    </Link>
+                  </NavLink>
                 </NavItem>
               </Nav>
-
-
             </div>
           </Container>
         </Navbar>
