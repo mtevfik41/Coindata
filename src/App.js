@@ -10,9 +10,9 @@ const App = () => {
       <Fragment>
         <Router>
           <Switch>
-            <Route exact path="/coindata" component={Home}/>
-            <Route exact path="/coindata/about" component={About}/>
-            <Route exact path="/coindata/alldata" component={AllData}/>
+            <Route exact path="/Coindata" component={Home}/>
+            <Route exact path="/Coindata/about" component={About}/>
+            <Route exact path="/Coindata/alldata" component={AllData}/>
           </Switch>
         </Router>
       </Fragment>

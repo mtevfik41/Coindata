@@ -18,7 +18,7 @@ const FilteredCoin = ({coin}) => {
       <Fragment>
         <Container className="d-flex align-items-center justify-content-center">
           <Button onClick={onClick}>
-            <Link to="/coindata/alldata"
+            <Link to="/Coindata/alldata"
                   className="text-white text-decoration-none">Clear</Link>
           </Button>
         </Container>

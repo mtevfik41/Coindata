@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4f1439-e31b-40d0-b200-0b8ed801c108" name="Changes" comment="" />
+    <list default="true" id="be4f1439-e31b-40d0-b200-0b8ed801c108" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/NavbarStrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavbarStrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +28,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1wpL5LGhWJNJ9ijc0reEbWezStp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,6 +62,7 @@
       <workItem from="1629150448881" duration="20000" />
       <workItem from="1629241749079" duration="11776000" />
       <workItem from="1629294532755" duration="3773000" />
+      <workItem from="1629301382974" duration="132000" />
     </task>
     <servers />
   </component>

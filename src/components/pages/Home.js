@@ -66,7 +66,7 @@ const Home = () => {
             <CardTitle tag="h5">All data</CardTitle>
             <CardText>To access all data about top 100 coins</CardText>
             <Button color="primary" style={{width:'10%'}}>
-              <Link to="/coindata/alldata"
+              <Link to="/Coindata/alldata"
                     className="text-white text-decoration-none">View
                 More</Link>
             </Button>

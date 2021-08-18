@@ -18,10 +18,10 @@ const NavbarStrap = (props) => {
           <Container>
             <div className="d-flex align-items-center">
               <NavbarBrand className="text-white" style={{fontSize: '24px'}}
-                           href="/coindata">CoinData</NavbarBrand>
+                           href="/Coindata">CoinData</NavbarBrand>
 
               <NavLink className="text-white"
-                       href="/coindata/alldata">Alldata</NavLink>
+                       href="/Coindata/alldata">Alldata</NavLink>
 
             </div>
             <div>
@@ -29,11 +29,11 @@ const NavbarStrap = (props) => {
               <Nav className="d-flex flex-row" navbar>
                 <NavItem>
                   <NavLink className="text-white"
-                           href="/coindata">Home</NavLink>
+                           href="/Coindata">Home</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="text-white"
-                           href="/coindata/about">About</NavLink>
+                           href="/Coindata/about">About</NavLink>
                 </NavItem>
               </Nav>
 
