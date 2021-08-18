@@ -30,7 +30,7 @@ const About = () => {
                 useEffect. I also used props a lot.
               </p>
               <hr className="my-2"/>
-              <p className="lead">Built by <i className="fab fa-github"></i>
+              <p className="lead">Built by <i className="fab fa-github"/>&nbsp;
                 <a href="https://github.com/mtevfik41" target="_blank"
                    rel="noreferrer">
                   mtevfik41

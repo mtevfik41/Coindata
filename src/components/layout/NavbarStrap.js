@@ -19,10 +19,12 @@ const NavbarStrap = (props) => {
           <Container>
             <div className="d-flex align-items-center">
               <NavbarBrand style={{fontSize: '24px'}}>
-                <Link className="text-white text-decoration-none"
-                      href="/Coindata">
-                  <span className="hov">Coindata</span>
-                </Link>
+                <NavLink>
+                  <Link className="text-white text-decoration-none"
+                        href="/Coindata">
+                    <span className="hov">Coindata</span>
+                  </Link>
+                </NavLink>
               </NavbarBrand>
               <NavLink>
                 <Link className="text-white text-decoration-none"
